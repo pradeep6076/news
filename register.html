@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+fieldset{
+border-color:green;
+margin-left:360px;
+margin-right:340px;
+margin-top:100px;
+border-width:5px;
+}
+p{
+color:#006400;
+}
+body{
+background-repeat:no-repeat;
+background-size:100% 100%;
+
+}
+</style>
+
+<script>
+function myvalid(){
+var name1=document.myform.mname.value;
+if(name1=="" || name1.length<10)
+{
+alert("please enter the valid name");
+return false;
+}
+var user1=document.myform.user.value;
+if(user1==""|| (user1.length<5||user1.length>15))
+{
+alert("please enter the username correctly");
+return false;
+}
+var pass=document.myform.pwd.value;
+if((pass.length<6||pass.length>20)|| pass=="")
+{
+alert("please enter a valid password");
+return false;
+}
+var branch1=document.myform.branch.value;
+if(branch1=="")
+{
+alert("please enter the branch");
+return false;
+}
+var year1=document.myform.year.value;
+if(year1=="")
+{
+alert("please enter the year");
+return false;
+}
+var sec1=document.myform.sec.value;
+if(sec1=="")
+{
+alert("please enter the section");
+return false;
+}
+var num1=document.myform.phoneno.value;
+if(num1==""|| num1.length<10)
+{
+alert("please enter the phone number atleast 10 digts");
+return false;
+}
+var email1=document.myform.emailid.value;
+if(email1==""||)
+}
+</script>
+</head>
+<body background="giphyh.gif">
+<fieldset>
+<legend><b>Registration Form</b></legend>
+<form name="myform" method="post" onsubmit="return myvalid()"/>
+<table>
+<tr>
+<td><p>Name</p></td><td><input type="text" name="mname"/></td>
+</tr>
+<tr>
+<td><p>UserName</p></td><td><input type="text" name="user" pattern="[a-z]{1,}"/></td>
+</tr>
+<tr>
+<td><p>password</p></td><td><input type="password" name="pwd"/></td>
+</tr>
+<tr>
+<td><p>Retype password</p></td><td><input type="password" name="pass"/></td>
+</tr>
+<tr>
+<td><p>Email</p></td><td><input type="text" name="branch"/></td>
+</tr>
+<tr>
+<td><p>Mobileno</p></td><td><input type="text" name="phoneno"/></td>
+</tr>
+<tr>
+<td><input type="submit" value="submit"/><td>
+</tr>
+</table>
+</form>
+<a href="new.html"><button>back to home</button></a>
+</fieldset>
+
+</body>
+</html>
